@@ -10,21 +10,122 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca);
+
+    .attribution { font-size: 11px;
+       text-align: center; 
+      margin-top: 5rem;}
     .attribution a { color: hsl(228, 45%, 44%); }
+
+    *{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body{
+      background-color: #0a0c1b;
+      color: #fefdff;
+      
+
+    }
+
+    .content-container{
+      display: flex;
+      height: 30rem;
+      width: 69.375rem;
+      margin: auto;
+      margin-top:10rem;
+      background-color: #1c1938;
+      border-radius: 0.5rem;
+    }
+
+    section{
+      width: 50%;
+    }
+
+    .text-content{
+      padding: 5rem;
+    }
+
+    h1{
+      font-family: 'Inter',sans-serif;
+      margin-bottom: 3rem;
+      font-size: 36px;
+    }
+    b{
+      color: #ae69d6;
+    }
+
+    p{
+      color: #8e8ca2;
+      font-family: 'Lexan Deca',sans-serif;
+      margin-bottom: 5rem;
+      font-size: 16px;
+      line-height: 1.5rem;
+    }
+
+    .stats{
+      display: flex;
+    }
+    .item{
+    margin: 0 auto;
+    }
+    .item:first-child{
+      margin-left: 0;
+    }
+
+    h2{
+      font-family: 'Inter',sans-serif;
+      line-height: 3rem;
+    }
+    .stats-description{
+      text-transform: uppercase;
+      font-size: 12px;
+    }
+
+  .image-section{
+    background-image: linear-gradient(0deg,rgba(144,41,203,.63),rgba(144, 41, 203, 0.63)),
+    url(images/image-header-desktop.jpg);
+    /* height: 27.875rem; */
+    background-repeat: no-repeat;
+    background-position: center;
+    align-items: center;
+    
+    background-size: cover;
+
+    border-radius:  0 0.5rem 0.5rem 0;
+  }
+    
   </style>
 </head>
 <body>
 
-  Get insights that help your business grow.
+  <div class="content-container">
+    <section class="text-content">
+      
+      <h1>Get <b>insights</b> that help your business grow.</h1>
 
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
-
-  10k+ companies
-  314 templates
-  12m+ queries
-
+      <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+      experience, and overall efficiency.</p>
+      
+      <div class="stats">
+          <div class="item">
+            <h2>10k+</h2><p class="stats-description">companies</p>
+          </div>
+          <div class="item">
+           <h2>314</h2><p class="stats-description">templates</p>
+          </div>
+          <div class="item">
+           <h2>12M+</h2><p class="stats-description">queries</p>
+          </div>
+      </div>
+    </section>
+    <section class="image-section">
+      <!-- <img src="images/image-header-desktop.jpg" alt=""> -->
+    </section>
+</div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
